@@ -2,7 +2,7 @@
  *
  * test_region.cpp
  *
- * Created: 2021-03-24 2021 by Jukka Sirkka
+ * Created: 2021-03-24 by Jukka Sirkka
  *
  * Copyright (C) 2021 Jukka Sirkka
  *
@@ -35,6 +35,7 @@ private slots:
   void testSubtraction1();
   void testSubtraction2();
   void testSubtraction3();
+  void testBoundingRect();
   void testOther();
 };
 
@@ -221,6 +222,17 @@ void TestRegion::testSubtraction3() {
 
 
 
+}
+
+void TestRegion::testBoundingRect() {
+  QVector<QRectF> boxes {
+    QRectF(1, 1, 2, 1),
+    QRectF(0, 2, 1, 1)
+  };
+
+  KV::Region r = std::accumulate(boxes.begin(), boxes.end(), KV::Region());
+
+  QCOMPARE(r.boundingRect(), QRectF(0, 1, 3, 2));
 }
 
 

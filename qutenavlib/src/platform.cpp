@@ -2,7 +2,7 @@
  *
  * platform.cpp
  *
- * Created: 13/05/2021 2021 by Jukka Sirkka
+ * Created: 13/05/2021 by Jukka Sirkka
  *
  * Copyright (C) 2021 Jukka Sirkka
  *

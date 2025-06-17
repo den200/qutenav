@@ -2,7 +2,7 @@
  *
  * chartupdater.cpp
  *
- * Created: 2021-03-18 2021 by Jukka Sirkka
+ * Created: 2021-03-18 by Jukka Sirkka
  *
  * Copyright (C) 2021 Jukka Sirkka
  *

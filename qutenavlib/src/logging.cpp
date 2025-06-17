@@ -2,7 +2,7 @@
  *
  * logging.cpp
  *
- * Created: 2021-05-03 2021 by Jukka Sirkka
+ * Created: 2021-05-03 by Jukka Sirkka
  *
  * Copyright (C) 2021 Jukka Sirkka
  *

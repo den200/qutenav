@@ -52,7 +52,7 @@ Minimum supported Qt version is 5.6.
 - freetype
 - fontconfig
 - dbus
-- a device that supports OpenGL ES 3.2 or later; or OpenGL 4.5 (core profile) or later
+- a device that supports OpenGL ES 3.1 or later; or OpenGL 4.5 (core profile) or later
 
 ## Building and installing SailfishOS app
 
@@ -102,3 +102,18 @@ Assuming you have enabled developer mode in your device, you can uninstall the p
 - `sudo make install`
 - optional: if you intend to use oesenc charts, install opencpn-plugin-oesenc or just copy the binaries oeserverd and libsgllnx64-$(VERSION).so to `/usr/bin/oeserverd` and `/usr/lib64/libsgllnx64-$(VERSION).so`
 - optional: if you intend to use oesu charts, install opencpn-plugin-o-charts or just copy the binaries oexserverd and libsgllnx64-$(VERSION).so to `/usr/bin/oexserverd` and `/usr/lib64/libsgllnx64-$(VERSION).so`
+
+## Building for Raspberry Pi 4/5
+
+Cross-compilation on a Linux host can be done with the standard Raspberry Pi toolchain:
+
+- install the `gcc-aarch64-linux-gnu` and `g++-aarch64-linux-gnu` packages
+- `mkdir build-rpi && cd build-rpi`
+- `cmake -DPLATFORM=qtcontrols \
+        -DCMAKE_SYSTEM_NAME=Linux \
+        -DCMAKE_SYSTEM_PROCESSOR=aarch64 \
+        -DCMAKE_C_COMPILER=aarch64-linux-gnu-gcc \
+        -DCMAKE_CXX_COMPILER=aarch64-linux-gnu-g++ ..`
+- `make -j4`
+
+Qt and runtime dependencies must also be available for the target architecture.

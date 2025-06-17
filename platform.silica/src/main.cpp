@@ -21,6 +21,7 @@
 #include <QGuiApplication>
 #include <QtQml>
 #include <QQuickView>
+#include <QOpenGLContext>
 
 #include <sailfishapp.h>
 #include "chartdisplay.h"
@@ -59,17 +60,24 @@ int main(int argc, char *argv[]) {
   qmlRegisterType<RouteModel>("org.qutenav", 1, 0, "RouteModel");
   qmlRegisterType<ChartIndicator>("org.qutenav", 1, 0, "ChartIndicator");
 
+  // Set up QML engine.
+  QScopedPointer<QGuiApplication> app(SailfishApp::application(argc, argv));
+
   QSurfaceFormat format;
-  format.setVersion(3, 2);
   format.setRenderableType(QSurfaceFormat::OpenGLES);
   format.setProfile(QSurfaceFormat::CoreProfile);
   format.setOption(QSurfaceFormat::DebugContext);
   format.setDepthBufferSize(24);
   format.setStencilBufferSize(8);
-  QSurfaceFormat::setDefaultFormat(format);
+  format.setVersion(3, 2);
 
-  // Set up QML engine.
-  QScopedPointer<QGuiApplication> app(SailfishApp::application(argc, argv));
+  QOpenGLContext probe;
+  probe.setFormat(format);
+  if (!probe.create() || probe.format().minorVersion() < 2) {
+    format.setVersion(3, 1);
+  }
+
+  QSurfaceFormat::setDefaultFormat(format);
 
   QTranslator tr;
   TranslationManager::instance()->loadTranslation(tr);

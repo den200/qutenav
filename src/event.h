@@ -2,7 +2,7 @@
  *
  * event.h
  *
- * Created: 2021-07-19 2021 by Jukka Sirkka
+ * Created: 2021-07-19 by Jukka Sirkka
  *
  * Copyright (C) 2021 Jukka Sirkka
  *

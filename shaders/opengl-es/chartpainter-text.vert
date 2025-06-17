@@ -1,4 +1,4 @@
-#version 320 es
+#version 310 es
 
 uniform mat4 m_p;
 uniform int w_atlas;

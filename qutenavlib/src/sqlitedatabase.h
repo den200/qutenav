@@ -2,7 +2,7 @@
  *
  * sqlitedatabase.h
  *
- * Created: 12/04/2021 2021 by Jukka Sirkka
+ * Created: 12/04/2021 by Jukka Sirkka
  *
  * Copyright (C) 2021 Jukka Sirkka
  *
