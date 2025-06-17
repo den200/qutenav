@@ -1,4 +1,4 @@
-#version 320 es
+#version 310 es
 uniform float depth;
 uniform uint vertexOffset;
 uniform float lineWidth; // the line width in display (mm) units

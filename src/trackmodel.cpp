@@ -2,7 +2,7 @@
  *
  * trackmodel.cpp
  *
- * Created: 13/04/2021 2021 by Jukka Sirkka
+ * Created: 13/04/2021 by Jukka Sirkka
  *
  * Copyright (C) 2021 Jukka Sirkka
  *

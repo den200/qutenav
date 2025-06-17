@@ -1,4 +1,4 @@
-#version 320 es
+#version 310 es
 // Original source:
 // https://github.com/paulhoux/Cinder-Samples/blob/master/GeometryShader/assets/shaders/lines1.geom
 const float MITER_LIMIT = .75;

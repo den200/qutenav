@@ -8903,8 +8903,8 @@
     </message>
     <message id="qutenav-marsys-10">
       <location line="+1" />
-      <source>other sytem</source>
-      <translation>other sytem</translation>
+      <source>other system</source>
+      <translation>other system</translation>
     </message>
     <message id="qutenav-marsys-11">
       <location line="+1" />

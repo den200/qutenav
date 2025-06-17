@@ -2,7 +2,7 @@
  *
  * OCDevice.cpp
  *
- * Created: 2021-02-23 2021 by Jukka Sirkka
+ * Created: 2021-02-23 by Jukka Sirkka
  *
  * Copyright (C) 2021 Jukka Sirkka
  *

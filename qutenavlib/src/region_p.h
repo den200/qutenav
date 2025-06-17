@@ -2,7 +2,7 @@
  *
  * region_p.h
  *
- * Created: 2021-03-14 2021 by Jukka Sirkka
+ * Created: 2021-03-14 by Jukka Sirkka
  *
  * Copyright (C) 2021 Jukka Sirkka
  *

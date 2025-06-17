@@ -2,7 +2,7 @@
  *
  * slotcounter.cpp
  *
- * Created: 2022-06-28 2022 by Jukka Sirkka
+ * Created: 2022-06-28 by Jukka Sirkka
  *
  * Copyright (C) 2022 Jukka Sirkka
  *

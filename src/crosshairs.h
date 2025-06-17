@@ -2,7 +2,7 @@
  *
  * crosshairs.h
  *
- * Created: 07/02/2021 2021 by Jukka Sirkka
+ * Created: 07/02/2021 by Jukka Sirkka
  *
  * Copyright (C) 2021 Jukka Sirkka
  *
